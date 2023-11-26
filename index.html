@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <title>Néo vs shimth</title>
+        <link rel="stylesheet" href="space.css">
+        <script>
+            window.addEventListener('DOMContentLoaded', (event) => {
+                var audio = new Audio();
+                var source = document.createElement('source');
+                source.src = 'music.mp3';
+                source.type = 'audio/mp3';
+                audio.appendChild(source);
+                audio.play();
+                audio.loop = true; // If you want the music to loop
+                audio.volume = 0.2; // To set the volume to 20%
+            });
+        </script>
+        <script src="space.js"></script>
+    </head>
+
+    <body>
+        <h1>Sort de la matrice terrennce!</h1>
+        <canvas id="board"></canvas>
+    </body>
+</html>
